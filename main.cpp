@@ -1,0 +1,86 @@
+#include <iostream>
+#include "list.h"
+using namespace std;
+
+int pilihan, masukan;
+address P;
+List L, L2;
+
+int main()
+{
+    createList(L);
+    cout << "Insert First \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    cout << "\nInput 5 : ";
+    insertFirst(L, Allocation(5));
+    printInfo(L);
+    cout << "\nInput 9 : ";
+    insertFirst(L, Allocation(9));
+    printInfo(L);
+    cout << "\nInput 2 : ";
+    insertFirst(L, Allocation(2));
+    printInfo(L);
+    cout << "\nInput 1 : ";
+    insertFirst(L, Allocation(1));
+    printInfo(L);
+    cout << "\n\nInsert Last";
+    cout << "\nInput 8 : ";
+    insertLast(L, Allocation(8));
+    printInfo(L);
+    cout << "\nInput 7 : ";
+    insertLast(L, Allocation(7));
+    printInfo(L);
+    cout << "\nInput 3 : ";
+    insertLast(L, Allocation(3));
+    printInfo(L);
+    cout << "\nInput 4 : ";
+    insertLast(L, Allocation(4));
+    printInfo(L);
+    cout << "\n\nDelete First \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    deleteFirst(L, P);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+    cout << "\n\nDelete Last \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    deleteLast(L, P);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+    cout << "\n\nSelisih \n";
+    printInfo(L);
+    cout << "\n";
+    cekSelisih(L);
+    cout << "\n\nDelete First \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    deleteFirst(L, P);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+    cout << "\n\nDelete Last \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    deleteLast(L, P);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+    cout << "\n\nLast ke First \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    perPindahan(L);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+    cout << "\n\nPertukaran Depan ke Belakang \n";
+    cout << "Sebelum : ";
+    printInfo(L);
+    geser(L);
+    cout << "\n";
+    cout << "Sesudah : ";
+    printInfo(L);
+}
